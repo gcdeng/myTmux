@@ -1,0 +1,29 @@
+# make tmux use default shell
+set-option -g default-shell /usr/bin/zsh
+
+# remap prefix from 'C-b' to 'C-a'
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# Enable mouse mode (tmux 2.1 and above)
+# set -g mouse on
+
+# split panes using | and -
+unbind '"'
+unbind %
+bind | split-window -h
+bind - split-window -v
+
+# Pane movement
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Pane resizing
+bind -r Left  resize-pane -L 2
+bind -r Down  resize-pane -D 2
+bind -r Up    resize-pane -U 2
+bind -r Right resize-pane -R 2
+
