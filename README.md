@@ -1,9 +1,13 @@
 # myTmux
-tmux is a terminal multiplexer.
 
-tmux.conf is my tmux config file.
+`$ sudo apt-get install tmux`  
 
-###Reference:
+`$ cp tmux.conf ~/.tmux.conf`  
+
+`$ tmux source-file ~/.tmux.conf`  
+
+### Reference:
+
 cheat sheet: https://tmuxcheatsheet.com/
 
 http://blog.chh.tw/posts/tmux-terminal-multiplexer/
